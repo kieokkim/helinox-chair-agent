@@ -1,0 +1,23 @@
+q_id,question,expected_answer,evidence_row,type
+Q01,체어제로 하이백 쓰는데 퍼스널쉐이드 되나요?,안 됩니다. 성격블록이 경량이라 락킹풋·퍼스널쉐이드 둘 다 미지원입니다.,chairs.csv:CHRZ-OUT-HB,trap
+Q02,체어원 미니인데 컵홀더 꽂을 수 있어요?,안 됩니다. 로우백 블록 중 컵홀더가 안 되는 유일한 모델입니다.,chairs.csv:CHR1-OUT-MINI,trap
+Q03,체어원 라지 그라운드시트 뭐 사야 돼요?,Two 사이즈입니다. One이 아닙니다.,chairs.csv:CHR1-OUT-LG,trap
+Q04,체어제로 라지도 그라운드시트 Zero 맞죠?,아닙니다. 체어제로 라지는 One입니다. Zero는 체어제로 기본형·LT용입니다.,chairs.csv:CHRZ-OUT-LG,trap
+Q05,선셋체어 락킹풋 이름이 Sunset 맞나요?,아닙니다. 선셋체어의 락킹풋은 XL입니다. Sunset은 그라운드시트 이름입니다.,chairs.csv:SUNS-OUT-STD,trap
+Q06,사바나 체어도 컵홀더 되죠? 체어원XL이랑 비슷해 보이는데,안 됩니다. 체어원XL과 볼핏·그라운드시트·락킹풋·쉐이드는 같지만 컵홀더만 사바나는 안 됩니다.,chairs.csv:SAVA-OUT-STD,trap
+Q07,캠프 체어 재고 있나요?,단종입니다. 다만 선셋체어와 5축(볼핏·그라운드시트·락킹풋·쉐이드·컵홀더)이 완전히 동일해서 대체 안내가 가능합니다.,twins.csv:TWIN1,trap
+Q08,체어원 (re) 쓰는데 신형이랑 액세서리 같이 써도 돼요?,아닙니다. 볼핏(45→55mm)·그라운드시트·락킹풋 3개 축이 전부 다릅니다.,chairs.csv:CHR1-OUT-RE,trap
+Q09,체어원 엑스라지가 로우백이면 낮은 거 아니에요?,아닙니다. 로우백은 목받침이 없다는 뜻일 뿐입니다. 실제 높이는 89cm로 하이백인 체어투(84cm)보다 높습니다. 다만 하이백 중 가장 큰 사바나(110cm)보다는 낮습니다.,chairs.csv:CHR1-OUT-XL,trap
+Q10,체어제로 LT가 저렴한 보급형인가요?,아닙니다. 체어제로 대비 32% 비싸고 패킹 부피도 48% 큽니다. 3% 가벼워지는 대신 비싸지고 커집니다.,chairs.csv:CHRZ-OUT-LT,trap
+Q11,벤치원은 스툴이라 약하겠죠?,아닙니다. 내하중 190kg로 전 라인업 최고입니다.,chairs.csv:BNC1-OUT-STD,trap
+Q12,선셋체어 (re)도 락킹풋 되나요?,안 됩니다. 신형과 달리 락킹풋·컵홀더가 둘 다 안 됩니다.,chairs.csv:SUNS-OUT-RE,trap
+Q13,체어원 라지 샀는데 뭐 살 수 있어요?,볼핏 45mm·그라운드시트 Two·퍼스널쉐이드(13.0mm)가 됩니다. 락킹풋은 안 됩니다.,chairs.csv:CHR1-OUT-LG,normal_gear_to_acc
+Q14,체어제로 쓰는데 같이 쓸 수 있는 게 뭐예요?,볼핏 45mm·그라운드시트 Zero가 됩니다. 락킹풋·퍼스널쉐이드·컵홀더 중 컵홀더만 전용으로 됩니다.,chairs.csv:CHRZ-OUT-STD,normal_gear_to_acc
+Q15,볼핏 55mm 들고 왔는데 어디 맞아요?,체어원(re)·체어원 하이백(re)·체어원 엑스라지·선셋체어·선셋체어LT·선셋체어(re)·사바나 체어·스위블 체어·벤치원에 맞습니다.,accessories.csv:볼핏 55mm,normal_acc_to_gear
+Q16,락킹풋 XL 들고 왔는데 뭐에 맞아요?,체어원 엑스라지·선셋체어·선셋체어LT·사바나 체어에 맞습니다.,accessories.csv:락킹풋 XL,normal_acc_to_gear
+Q17,캠프체어인데 선셋체어 락킹풋 써도 돼요?,됩니다. 두 제품은 5축이 완전히 동일한 쌍둥이 제품입니다.,twins.csv:TWIN1,normal_twin
+Q18,체어원 미니용 액세서리 스피드스툴 S에도 맞아요?,됩니다. 두 제품은 볼핏(45mm)만 되고 나머지는 전부 안 되는 동일한 축을 가진 쌍둥이입니다.,twins.csv:TWIN3,normal_twin
+Q19,택티컬 체어에 컵홀더 되나요?,데이터 없음. 택티컬 라인 체어는 아직 수집되지 않았습니다. 접두어 규칙(택티컬~)은 확인됐지만 개별 축 값은 검증 전입니다.,없음,normal_no_data
+Q20,홈 라인 선셋체어 쉐이드 되나요?,데이터 없음. HDB 라인 체어는 아직 수집되지 않았습니다. 접미사 규칙(~홈)은 확인됐지만 개별 축 값은 검증 전입니다.,없음,normal_no_data
+Q21,체어원 LT 쓰는데 그라운드시트 뭐 돼요?,One입니다. (추정: 실측 아닌 상속 규칙 기반 — 볼핏45mm만 실측 확인됨),twins.csv:LT2,normal_lt_caveat
+Q22,선셋체어 LT 락킹풋 XL 되나요?,됩니다. (추정: 실측 아닌 상속 규칙 기반 — 선셋체어LT는 5축 전부 상속 규칙으로만 확인됨),twins.csv:LT3,normal_lt_caveat

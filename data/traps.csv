@@ -1,0 +1,13 @@
+trap_id,product_name,wrong_answer,correct_answer,axis,evidence_row
+T01,체어제로 하이백,하이백 성격블록일 것(이름에 하이백이 있음),성격블록=경량. 락킹풋·퍼스널쉐이드 미지원,성격블록,chairs.csv:CHRZ-OUT-HB
+T02,체어원 미니,컵홀더 될 것(로우백 공통 패턴),컵홀더 안 됨. 로우백 블록 중 유일한 예외,cupholder,chairs.csv:CHR1-OUT-MINI
+T03,체어원 라지,그라운드시트 One(체어원 기본형과 동일할 것),그라운드시트 Two,groundsheet,chairs.csv:CHR1-OUT-LG
+T04,체어제로 라지,그라운드시트 Zero(체어제로 기본형과 동일할 것),그라운드시트 One,groundsheet,chairs.csv:CHRZ-OUT-LG
+T05,선셋체어,락킹풋 Sunset(그라운드시트명과 같을 것),락킹풋 XL,rockingfoot,chairs.csv:SUNS-OUT-STD
+T06,사바나 체어,컵홀더 됨(체어원XL과 4축 동일하니 될 것),컵홀더 안 됨,cupholder,chairs.csv:SAVA-OUT-STD
+T07,캠프 체어,단종이라 데이터 없음,선셋체어와 5축 완전 동일 — 대체 안내 가능(twins.csv:TWIN1),전체axis,chairs.csv:CAMP-OUT-STD
+T08,체어원(re),신형과 액세서리 동일할 것(이름이 같으니),볼핏·그라운드시트·락킹풋 3축 전부 다름(45→55mm 등). 패킹부피도 47% 큼,ballfeet;groundsheet;rockingfoot,chairs.csv:CHR1-OUT-RE
+T09,체어원 엑스라지,로우백이니 등받이가 낮을 것,높이 89cm로 하이백 블록의 체어투(84cm)보다 높음. 로우백=목받침 없음이라는 뜻이지 낮다는 뜻이 아님. 단 하이백 최고인 사바나(110cm)보다는 낮음 — "로우백이 항상 작다"가 틀렸다는 정도로만 답할 것,height_cm,chairs.csv:CHR1-OUT-XL
+T10,체어제로 LT,보급형(저가) 라인일 것,체어제로 대비 32% 비쌈. 패킹부피는 48% 큼(3% 가벼워지는 대가),price_krw;pack_size,chairs.csv:CHRZ-OUT-LT
+T11,벤치원,성격블록이 '스툴'이라 약한 제품일 것,내하중 190kg로 전 라인업 최고,load_kg,chairs.csv:BNC1-OUT-STD
+T12,선셋체어(re),신형과 액세서리 동일할 것(이름이 같으니),락킹풋·컵홀더 2축 완전 소실(5축 중 40%가 사라짐) — 가장 위험한 케이스,rockingfoot;cupholder,chairs.csv:SUNS-OUT-RE
