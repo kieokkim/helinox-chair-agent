@@ -238,7 +238,7 @@ EVAL_CRITERIA: dict[str, dict[str, list]] = {
     "Q19": {"include_groups": [["데이터 없음"]], "must_exclude": []},
     "Q20": {"include_groups": [["데이터 없음"]], "must_exclude": []},
     # Q21/Q22(v2 신설, plan_v2.md 작업4) — LT2/LT3 caveat가 실제로 답변에
-    # 뜨는지 첫 검증. twin_lookup의 caveat 문구는 rules.md 원문 그대로
+    # 뜨는지 첫 검증. twin_lookup의 caveat 문구는 helinox_compat_policy.md 원문 그대로
     # 고정("볼핏만 실측, 나머지 4축은 상속 추정" / "5축 전부 상속 규칙
     # 기반")이라 expected_answer 원문과 표현이 다를 수 있어 "추정"/"상속"
     # 공통어로 느슨하게 묶음(회고 5번 동의어 그룹화 방식).
@@ -248,7 +248,7 @@ EVAL_CRITERIA: dict[str, dict[str, list]] = {
             "must_exclude": ["안 됩니다", "미지원", "호환되지 않"]},
 }
 
-# 22문항 중 20개(90.9%, 반올림 20/22) — rules.md:274 권고치. run_eval()이
+# 22문항 중 20개(90.9%, 반올림 20/22) — helinox_compat_policy.md:274 권고치. run_eval()이
 # 채점 후 이 기준 충족 여부를 판정용 1줄로 추가 출력한다(기존엔 게이트
 # 자체가 없었음, plan_v2.md 작업4).
 EVAL_PASS_THRESHOLD = 20

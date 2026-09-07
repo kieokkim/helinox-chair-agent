@@ -175,7 +175,7 @@ _TWIN_AXIS_COLUMNS: dict[str, str] = {
     "컵홀더": "cupholder",
 }
 
-# LT2/LT3 caveat 고정 문구(rules.md:236-238 원문 전사). twins.csv에 "이 축은
+# LT2/LT3 caveat 고정 문구(helinox_compat_policy.md:236-238 원문 전사). twins.csv에 "이 축은
 # 실측/추정"을 나타내는 구조화 컬럼이 없어 자동 계산이 불가능하고, LT2/LT3
 # 둘뿐인 고정 케이스라 파싱 로직 대신 문구를 그대로 하드코딩한다.
 _LT_CAVEAT: dict[str, str] = {
@@ -218,7 +218,7 @@ def _twin_axis_agreement(
 def _twin_caveat(
     group_id: str, member_ids: list[str], chairs_by_id: dict[str, dict]
 ) -> str | None:
-    """twin_lookup의 caveat 필드(rules.md 3번 — 비교/추정이 들어간 결과는
+    """twin_lookup의 caveat 필드(helinox_compat_policy.md 3번 — 비교/추정이 들어간 결과는
     LLM이 직접 문장을 조립하게 두지 않고 rule이 완성 문장을 미리 만든다)."""
     if group_id in _LT_CAVEAT:
         return _LT_CAVEAT[group_id]

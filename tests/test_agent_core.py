@@ -77,7 +77,7 @@ def test_twin_lookup_LT그룹_퍼센트차이():
 
 
 def test_twin_lookup_LT추정_caveat():
-    # LT2: 체어원(신형)->체어원LT, 볼핏만 실측·나머지 4축 상속 추정 -> rules.md 원문 그대로
+    # LT2: 체어원(신형)->체어원LT, 볼핏만 실측·나머지 4축 상속 추정 -> helinox_compat_policy.md 원문 그대로
     result = ac.twin_lookup("체어원 LT")
     assert result["group_id"] == "LT2"
     assert result["caveat"] == "볼핏만 실측, 나머지 4축은 상속 추정"
